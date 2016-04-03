@@ -1,0 +1,132 @@
+!*background: #383c4a
+*background: #1f1f1f
+*foreground: #babdb6
+urxvt.background: #1f1f1f
+
+! terminal colors ------------------------------------------------------------
+
+! tangoesque scheme
+! Black (not tango) + DarkGrey
+*color0:  #1f1f1f
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff5e5e
+*color9:  #ff8d8d
+! DarkGreen + Green
+*color2:  #83f683
+*color10: #c8e7a8
+! DarkYellow + Yellow
+*color3:  #ffff9e
+*color11: #ffc123
+! DarkBlue + Blue
+*color4:  #8a8aff
+*color12: #3465a4
+! DarkMangenta + Mangenta
+*color5:  #ff8cff
+*color13: #f57900
+!DarkCyan + Cyan (both not tango)
+*color6:  #98ffff
+*color14: #46a4ff
+! LightGrey + White
+*color7:  #ebebeb
+*color15: #ffffff
+! rxvt-unicode ---------------------------------------------------------------
+
+! font preference
+URxvt.font: 6x12
+URxvt.boldFont: 6x12
+URxvt.letterSpace: 0
+!initial size
+urxvt*geometry:           95x23
+!internal whitespace
+urxvt*internalBorder:     4
+!fade text n% upon unfocus
+!urxvt*fading:             0
+!darken=(0 to 100) lighten=(-1 to -100)
+!urxvt*shading:            0
+!save n lines of scrollback buffer
+urxvt*saveLines:          50000
+!flash screen for attention
+urxvt*visualBell:       false
+URxvt.cursorBlink:      false
+!jump to bottom (prompt) on keypress
+urxvt*scrollTtyKeypress:  true
+!jump to bottom (prompt) when tty gets new lines
+urxvt*scrollWithBuffer:   true
+!jump to bottom (prompt) on tty output
+urxvt*scrollTtyOutput:    false
+!toggle scrollbar
+urxvt*scrollBar:         true
+!scrollbar styles: rxvt, plain, next or xterm
+urxvt*scrollstyle:        plain
+!scrollbar alignment
+urxvt*scrollBar_right:    false
+urxvt*scrollColor:        #444444
+urxvt*cursorColor:        #83f683
+!screen dump settings
+urxvt*print-pipe:         cat > $(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
+!secondary screen scroll (default enabled)
+urxvt*secondaryScroll:    true
+!de-iconify (map) on receipt of a bell character
+urxvt*mapAlert:           true
+!inhibit writing record into the system log file utmp
+!urxvt*utmpInhibit:        true
+URxvt*skipBuiltinGlyphs:    true
+!! BEGIN urlLauncher settings !!
+urxvt*perl-lib:           /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:    default,clipboard,vtwheel,tabbedex,url-select
+URxvt.url-select.launcher:  vivaldi
+URxvt.url-select.underline: true
+!! END urlLauncher settings !!
+
+URxvt.depth: 32
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.S-C-c: perl:clipboard:copy
+URxvt.keysym.S-C-v: perl:clipboard:paste
+URxvt.keysym.M-C-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+URxvt.tabbed.autohide: true
+URxvt.tabbed.new-button: no
+URxvt.tabbed.tabbar-fg:     15
+URxvt.tabbed.tabbar-bg:     background
+URxvt.tabbed.tab-fg:        0
+URxvt.tabbed.tab-bg:        14
+URXvt.tabbed.reopen-on-close: yes
+URxvt.tabbed.no-tabbedex-keys: true
+URxvt.keysym.Control-Down: perl:tabbedex:new_tab
+URxvt.keysym.Control-Left: perl:tabbedex:prev_tab
+URxvt.keysym.Control-Right: perl:tabbedex:next_tab
+URxvt.keysym.Control-Up: perl:tabbedex:rename_tab
+URxvt.keysym.Control-q: perl:tabbedex:close_tab
+! xscreensaver ---------------------------------------------------------------
+!font settings
+xscreensaver.Dialog.headingFont:        -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #31363b
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #666666
+xscreensaver.Dialog.Button.background:  #ffffff
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #666666
+xscreensaver.Dialog.text.background:    #ffffff
+xscreensaver.Dialog.internalBorderWidth:12
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #DA6173
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       8
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+
