@@ -1,13 +1,13 @@
 !*background: #383c4a
-*background: #1f1f1f
+*background: #2f343f
 *foreground: #babdb6
-urxvt.background: #1f1f1f
+urxvt.background: #2f343f
 
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
 ! Black (not tango) + DarkGrey
-*color0:  #1f1f1f
+*color0:  #2f343f
 *color8:  #555753
 ! DarkRed + Red
 *color1:  #ff5e5e
@@ -61,7 +61,7 @@ urxvt*scrollBar:         true
 urxvt*scrollstyle:        plain
 !scrollbar alignment
 urxvt*scrollBar_right:    false
-urxvt*scrollColor:        #444444
+urxvt*scrollColor:        #aeaeae
 urxvt*cursorColor:        #83f683
 !screen dump settings
 urxvt*print-pipe:         cat > $(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
