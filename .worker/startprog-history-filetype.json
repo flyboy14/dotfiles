@@ -1,0 +1,30 @@
+{
+  "filetype": {
+    "JPEG image": [
+      {
+        "command": "feh --start-at"
+      },
+      {
+        "command": "feh"
+      },
+      {
+        "command": "feh -g 800x600 -d -B black --keep-zoom-vp --start-at"
+      },
+      {
+        "command": "feh -g 800x600 -d --keep-zoom-vp --start-at"
+      },
+      {
+        "command": "feh -g 800x600 -d --zoom-vp --start-at"
+      },
+      {
+        "command": "feh -g 800x600 -d --start-at"
+      },
+      {
+        "command": "feh -g 640x480 -S"
+      },
+      {
+        "command": "feh -g 640x480 -d -S"
+      }
+    ]
+  }
+}
